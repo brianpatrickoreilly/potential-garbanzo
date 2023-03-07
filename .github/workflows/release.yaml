@@ -9,4 +9,4 @@ jobs:
       - name: Create generic version tag based on release tag
         run: |
           echo "tag_name=$(echo ${{ github.ref_name }} | sed -E 's/^(v[0-9]+)\.[0-9]+\.[0-9]+$/\1/'))" >> $GITHUB_ENV
-      - run: echo "${{ env.tag_name }}
+      - run: echo "${{ env.tag_name }}"
